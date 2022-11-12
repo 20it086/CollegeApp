@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+             <ImageView
+                 android:id="@+id/br_Icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="@dimen/text_margin"
+                 android:src="@drawable/ic_computer"/>
+
+            <TextView
+                android:id="@+id/br_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computer Engineering "
+                android:layout_marginLeft="@dimen/text_margin"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/bold"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/br_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/light"
+            android:text="@string/about_college"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
